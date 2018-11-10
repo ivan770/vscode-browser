@@ -11,6 +11,19 @@ function getWebviewContent(cssFile) {
     <link rel="stylesheet" href="${cssFile}">
 </head>
 <body>
+    <style>
+    body.vscode-light {
+        background: white;
+    }
+    
+    body.vscode-dark {
+        background: #0f111a;
+    }
+    
+    body.vscode-high-contrast {
+        background: red;
+    }    
+    </style>
     <script>
         const vscode = acquireVsCodeApi();
         function goURL(){
