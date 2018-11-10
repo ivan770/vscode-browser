@@ -1,0 +1,39 @@
+{
+    "name": "vscode-browser",
+    "displayName": "VSCode Browser",
+    "description": "WebView-based web browser",
+    "version": "1.0.0",
+    "publisher": "ivan770",
+    "license": "MIT",
+    "repository": "https://github.com/ivan770/vscode-browser",
+    "icon": "assets/icon.png",
+    "engines": {
+        "vscode": "^1.28.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:vscode-browser.openWindow"
+    ],
+    "main": "./extension",
+    "contributes": {
+        "commands": [
+            {
+                "command": "vscode-browser.openWindow",
+                "title": "Browser: Open new window"
+            }
+        ]
+    },
+    "scripts": {
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.21",
+        "eslint": "^4.11.0",
+        "@types/node": "^8.10.25",
+        "@types/mocha": "^2.2.42"
+    }
+}
