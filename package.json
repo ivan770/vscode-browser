@@ -23,7 +23,11 @@
                 "command": "vscode-browser.openWindow",
                 "title": "Browser: Open new window"
             }
-        ]
+        ],
+        "keybindings": [{
+            "command": "vscode-browser.openWindow",
+            "key": "ctrl+shift+/"
+        }]
     },
     "scripts": {
         "postinstall": "node ./node_modules/vscode/bin/install",
